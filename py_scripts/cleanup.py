@@ -2,7 +2,10 @@ import pandas as pd
 import re
 
 # Read the CSV file
-df = pd.read_csv('csv-DBs\masterdb_updated.csv')
+df = pd.read_csv('finaldb.csv')
+
+# Remove outer quotes from Title column
+df['Title'] = df['Title'].apply(lambda x: x[1:-1] if isinstance(x, str) and x.startswith('"') and x.endswith('"') else x)
 
 # Print original number of rows
 original_count = len(df)
