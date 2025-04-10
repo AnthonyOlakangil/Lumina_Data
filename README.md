@@ -1,2 +1,2 @@
-# Lumina_Data
-storing dbs and csvs for lumina project
+# lumina-data
+storing data and cleaning scripts for lumina project
