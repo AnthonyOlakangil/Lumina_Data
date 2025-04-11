@@ -3,6 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 from instagrapi import Client
 import nltk
 from nltk.tokenize import sent_tokenize
+import traceback
 
 # Download the Punkt tokenizer if needed.
 nltk.download('punkt')
@@ -27,7 +28,14 @@ TEXT_COLOR = (255, 255, 255)  # White text
 
 # Choose whether to center the text on each image.
 def get_centered_position(draw, text, font, img_width, img_height):
-    text_width, text_height = draw.textsize(text, font=font)
+    try:
+        # getbbox returns (left, top, right, bottom)
+        bbox = font.getbbox(text)
+        text_width = bbox[2] - bbox[0]
+        text_height = bbox[3] - bbox[1]
+    except AttributeError:
+        # fallback in case getbbox is not available
+        text_width, text_height = draw.textsize(text, font=font)
     x = (img_width - text_width) / 2
     y = (img_height - text_height) / 2
     return (x, y)
@@ -51,7 +59,7 @@ output_files = []  # List of file paths to the generated images
 
 for idx, sentence in enumerate(sentences, start=1):
     try:
-        # Open the base image (convert to RGBA for transparency support)
+        # Open the base image and convert to RGBA for transparency support.
         img = Image.open(IMAGE_FILE).convert("RGBA")
     except IOError:
         raise FileNotFoundError(f"Unable to open image file {IMAGE_FILE}")
@@ -62,24 +70,22 @@ for idx, sentence in enumerate(sentences, start=1):
     except IOError:
         raise FileNotFoundError(f"Font file {FONT_PATH} not found.")
 
-    # Determine centered position (or use a fixed offset if desired)
+    # Determine centered position
     img_width, img_height = img.size
     position = get_centered_position(draw, sentence, font, img_width, img_height)
 
-    # Draw the text (you may add stroke or shadow if needed)
+    # Draw the text onto the image.
     draw.text(position, sentence, fill=TEXT_COLOR, font=font)
 
-    # Save the image to the output directory.
-    output_path = os.path.join(OUTPUT_DIR, f"output_{idx}.png")
-    img.save(output_path)
+    # Convert to RGB (Instagram requires JPEG format) and save as JPEG.
+    rgb_img = img.convert("RGB")
+    output_path = os.path.join(OUTPUT_DIR, f"output_{idx}.jpg")
+    rgb_img.save(output_path, format="JPEG")
     output_files.append(output_path)
     print(f"Saved image {idx} with text overlay to {output_path}")
 
-# === STEP 3: Combine Images into a Carousel (Singular Post) and Publish to Instagram ===
+# === STEP 3: Combine Images into a Carousel and Publish to Instagram ===
 
-# Create a combined caption.
-# For example, you might join all overlaid texts.
-# Alternatively, you could provide one overarching caption.
 carousel_caption = "\n\n".join(sentences) + "\n\n" + INSTAGRAM_CAPTION_EXTRA
 
 insta_client = Client()
@@ -87,19 +93,19 @@ try:
     insta_client.login(INSTAGRAM_USERNAME, INSTAGRAM_PASSWORD)
     print("Logged in to Instagram successfully.")
 except Exception as e:
+    traceback.print_exc()
     raise RuntimeError(f"Instagram login failed: {e}")
 
 try:
     if len(output_files) == 1:
-        # If only one image is generated, post it as a single photo.
         media = insta_client.photo_upload(output_files[0], caption=carousel_caption)
-        print(f"Posted single image successfully: media ID {media.get('id', 'N/A')}")
+        print(f"Posted single image successfully: media ID {media.pk}")
     else:
-        # If multiple images exist, upload them as a carousel (album) post.
         media = insta_client.album_upload(output_files, caption=carousel_caption)
-        print(f"Posted carousel successfully: media ID {media.get('id', 'N/A')}")
+        print(f"Posted carousel successfully: media ID {media.pk}")
 except Exception as e:
-    print(f"Failed to post to Instagram: {e}")
+    traceback.print_exc()
+    print("Failed to post to Instagram:", e)
 
 insta_client.logout()
 print("Logged out from Instagram.")
