@@ -10,9 +10,9 @@ nltk.download('punkt')
 # === CONFIGURATION ===
 
 # Input files and directory settings
-IMAGE_FILE = "orange_gradient.png"
-TEXT_FILE = "text.txt"
-OUTPUT_DIR = "output_images"
+IMAGE_FILE = "ig/orange_gradient.png"
+TEXT_FILE = "ig/text.txt"
+OUTPUT_DIR = "ig/output_images"
 
 # Instagram Credentials (update these with your credentials)
 INSTAGRAM_USERNAME = "lumina.for.change"
