@@ -1,10 +1,17 @@
-import os
 from PIL import Image, ImageDraw, ImageFont
 from instagrapi import Client
 import nltk
 from nltk.tokenize import sent_tokenize
 import traceback
 import openai
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv()  # Load variables from .env
+
+API_KEY = os.getenv('API_KEY')
+
 
 # Download the Punkt tokenizer if needed.
 nltk.download('punkt')
@@ -21,7 +28,7 @@ INSTAGRAM_USERNAME = "lumina.for.change"
 INSTAGRAM_PASSWORD = "lumina-edu"
 
 # OpenAI API credentials
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = API_KEY
 
 # Font settings for text overlay
 FONT_PATH = "arial.ttf"
