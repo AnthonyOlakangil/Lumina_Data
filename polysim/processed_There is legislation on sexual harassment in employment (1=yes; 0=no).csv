@@ -1,0 +1,190 @@
+Economy,Year,Economy Code,There is legislation on sexual harassment in employment (1=yes; 0=no)
+Afghanistan,2023,AFG,1.0
+Albania,2023,ALB,1.0
+Algeria,2023,DZA,1.0
+Angola,2023,AGO,1.0
+Antigua and Barbuda,2023,ATG,0.0
+Argentina,2023,ARG,1.0
+Armenia,2023,ARM,1.0
+Australia,2023,AUS,1.0
+Austria,2023,AUT,1.0
+Azerbaijan,2023,AZE,1.0
+"Bahamas, The",2023,BHS,1.0
+Bahrain,2023,BHR,1.0
+Bangladesh,2023,BGD,1.0
+Barbados,2023,BRB,1.0
+Belarus,2023,BLR,0.0
+Belgium,2023,BEL,1.0
+Belize,2023,BLZ,1.0
+Benin,2023,BEN,1.0
+Bhutan,2023,BTN,1.0
+Bolivia,2023,BOL,1.0
+Bosnia and Herzegovina,2023,BIH,1.0
+Botswana,2023,BWA,0.0
+Brazil,2023,BRA,1.0
+Brunei Darussalam,2023,BRN,0.0
+Bulgaria,2023,BGR,1.0
+Burkina Faso,2023,BFA,1.0
+Burundi,2023,BDI,1.0
+Cabo Verde,2023,CPV,1.0
+Cambodia,2023,KHM,1.0
+Cameroon,2023,CMR,1.0
+Canada,2023,CAN,1.0
+Central African Republic,2023,CAF,1.0
+Chad,2023,TCD,1.0
+Chile,2023,CHL,1.0
+China,2023,CHN,1.0
+Colombia,2023,COL,1.0
+Comoros,2023,COM,1.0
+"Congo, Dem. Rep.",2023,COD,1.0
+"Congo, Rep.",2023,COG,1.0
+Costa Rica,2023,CRI,1.0
+Cote d'Ivoire,2023,CIV,1.0
+Croatia,2023,HRV,1.0
+Cyprus,2023,CYP,1.0
+Czechia,2023,CZE,1.0
+Denmark,2023,DNK,1.0
+Djibouti,2023,DJI,1.0
+Dominica,2023,DMA,0.0
+Dominican Republic,2023,DOM,1.0
+Ecuador,2023,ECU,1.0
+"Egypt, Arab Rep.",2023,EGY,1.0
+El Salvador,2023,SLV,1.0
+Equatorial Guinea,2023,GNQ,1.0
+Eritrea,2023,ERI,1.0
+Estonia,2023,EST,1.0
+Eswatini,2023,SWZ,0.0
+Ethiopia,2023,ETH,1.0
+Fiji,2023,FJI,1.0
+Finland,2023,FIN,1.0
+France,2023,FRA,1.0
+Gabon,2023,GAB,1.0
+"Gambia, The",2023,GMB,0.0
+Georgia,2023,GEO,1.0
+Germany,2023,DEU,1.0
+Ghana,2023,GHA,1.0
+Greece,2023,GRC,1.0
+Grenada,2023,GRD,0.0
+Guatemala,2023,GTM,0.0
+Guinea,2023,GIN,1.0
+Guinea-Bissau,2023,GNB,0.0
+Guyana,2023,GUY,1.0
+Haiti,2023,HTI,0.0
+Honduras,2023,HND,1.0
+"Hong Kong SAR, China",2023,HKG,1.0
+Hungary,2023,HUN,1.0
+Iceland,2023,ISL,1.0
+India,2023,IND,1.0
+Indonesia,2023,IDN,1.0
+"Iran, Islamic Rep.",2023,IRN,0.0
+Iraq,2023,IRQ,1.0
+Ireland,2023,IRL,1.0
+Israel,2023,ISR,1.0
+Italy,2023,ITA,1.0
+Jamaica,2023,JAM,1.0
+Japan,2023,JPN,0.0
+Jordan,2023,JOR,1.0
+Kazakhstan,2023,KAZ,0.0
+Kenya,2023,KEN,1.0
+Kiribati,2023,KIR,1.0
+"Korea, Rep.",2023,KOR,1.0
+Kosovo,2023,XKX,1.0
+Kuwait,2023,KWT,1.0
+Kyrgyz Republic,2023,KGZ,1.0
+Lao PDR,2023,LAO,1.0
+Latvia,2023,LVA,1.0
+Lebanon,2023,LBN,1.0
+Lesotho,2023,LSO,1.0
+Liberia,2023,LBR,1.0
+Libya,2023,LBY,0.0
+Lithuania,2023,LTU,1.0
+Luxembourg,2023,LUX,1.0
+Madagascar,2023,MDG,1.0
+Malawi,2023,MWI,1.0
+Malaysia,2023,MYS,1.0
+Maldives,2023,MDV,1.0
+Mali,2023,MLI,0.0
+Malta,2023,MLT,1.0
+Marshall Islands,2023,MHL,0.0
+Mauritania,2023,MRT,0.0
+Mauritius,2023,MUS,1.0
+Mexico,2023,MEX,1.0
+"Micronesia, Fed. Sts.",2023,FSM,0.0
+Moldova,2023,MDA,1.0
+Mongolia,2023,MNG,1.0
+Montenegro,2023,MNE,1.0
+Morocco,2023,MAR,1.0
+Mozambique,2023,MOZ,1.0
+Myanmar,2023,MMR,0.0
+Namibia,2023,NAM,1.0
+Nepal,2023,NPL,1.0
+Netherlands,2023,NLD,1.0
+New Zealand,2023,NZL,1.0
+Nicaragua,2023,NIC,1.0
+Niger,2023,NER,1.0
+Nigeria,2023,NGA,1.0
+North Macedonia,2023,MKD,1.0
+Norway,2023,NOR,1.0
+Oman,2023,OMN,1.0
+Pakistan,2023,PAK,1.0
+Palau,2023,PLW,0.0
+Panama,2023,PAN,1.0
+Papua New Guinea,2023,PNG,0.0
+Paraguay,2023,PRY,1.0
+Peru,2023,PER,1.0
+Philippines,2023,PHL,1.0
+Poland,2023,POL,1.0
+Portugal,2023,PRT,1.0
+Puerto Rico,2023,PRI,1.0
+Qatar,2023,QAT,0.0
+Romania,2023,ROU,1.0
+Russian Federation,2023,RUS,0.0
+Rwanda,2023,RWA,1.0
+Samoa,2023,WSM,1.0
+San Marino,2023,SMR,0.0
+Sao Tome and Principe,2023,STP,1.0
+Saudi Arabia,2023,SAU,1.0
+Senegal,2023,SEN,1.0
+Serbia,2023,SRB,1.0
+Seychelles,2023,SYC,0.0
+Sierra Leone,2023,SLE,1.0
+Singapore,2023,SGP,1.0
+Slovak Republic,2023,SVK,1.0
+Slovenia,2023,SVN,1.0
+Solomon Islands,2023,SLB,0.0
+Somalia,2023,SOM,0.0
+South Africa,2023,ZAF,1.0
+South Sudan,2023,SSD,1.0
+Spain,2023,ESP,1.0
+Sri Lanka,2023,LKA,1.0
+St. Kitts and Nevis,2023,KNA,0.0
+St. Lucia,2023,LCA,1.0
+St. Vincent and the Grenadines,2023,VCT,0.0
+Sudan,2023,SDN,0.0
+Suriname,2023,SUR,1.0
+Sweden,2023,SWE,1.0
+Switzerland,2023,CHE,1.0
+Syrian Arab Republic,2023,SYR,0.0
+Tajikistan,2023,TJK,0.0
+Tanzania,2023,TZA,1.0
+Thailand,2023,THA,1.0
+Timor-Leste,2023,TLS,1.0
+Togo,2023,TGO,1.0
+Tonga,2023,TON,0.0
+Trinidad and Tobago,2023,TTO,0.0
+Tunisia,2023,TUN,1.0
+Turkiye,2023,TUR,1.0
+Uganda,2023,UGA,1.0
+Ukraine,2023,UKR,1.0
+United Arab Emirates,2023,ARE,1.0
+United Kingdom,2023,GBR,1.0
+United States,2023,USA,1.0
+Uruguay,2023,URY,1.0
+Uzbekistan,2023,UZB,0.0
+Vanuatu,2023,VUT,0.0
+"Venezuela, RB",2023,VEN,1.0
+Vietnam,2023,VNM,1.0
+West Bank and Gaza,2023,PSE,0.0
+"Yemen, Rep.",2023,YEM,0.0
+Zambia,2023,ZMB,1.0
+Zimbabwe,2023,ZWE,1.0
