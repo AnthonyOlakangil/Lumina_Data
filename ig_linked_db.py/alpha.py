@@ -36,6 +36,8 @@ TITLE_FONT_SIZE = 40
 COUNTRY_FONT_SIZE = 30
 CAPTION_FONT_SIZE = 25
 
+
+
 # Additional aesthetics used in the title slide
 # (coordinates and margins from test_new_script.py)
 TITLE_X = 150       # Horizontal position for title
@@ -55,6 +57,15 @@ MARGIN_PERCENTAGE = 30  # Extremely aggressive text compression
 # CSV and posting settings
 MIN_STORIES = 10
 MAX_STORIES = 15
+
+FONT_PATH = "fonts/Baloo2-Regular.ttf"
+TITLE_FONT_SIZE = 40
+TEXT_FONT_SIZE = 30
+CAPTION_FONT_SIZE = 25
+CTA_TEXT = "Read more on Lumina."
+TEXT_COLOR = (0, 0, 0)
+TEMP_PREVIEW_DIR = "static/preview_images"
+os.makedirs(TEMP_PREVIEW_DIR, exist_ok=True)
 
 # === AESTHETIC FUNCTIONS ===
 
@@ -358,6 +369,3 @@ def main():
                 time.sleep(15)
     
     print(f"\nCompleted posting {successful_posts} out of {num_stories} selected stories")
-
-if __name__ == "__main__":
-    main()
